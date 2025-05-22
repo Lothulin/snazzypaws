@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <!--Head information-->
+    <head>
+        <title>Snazzy Paws Grooming</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href = "../css/stylesheeta2.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Coustard:wght@400;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <!--stylesheet and font sheets here-->
+    </head>
+
+    <!--nav bar and logo-->
+    <header>
+       <div class="header-container">
+            <img class="logo" src="../Resources/logoipsum-snazzypaws.svg" alt="Snazzy Paws Logo">
+            <nav>
+                <ul class="navbar">
+                    <li class="nav-option"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-option"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-option"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-option"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-option"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--main page content-->
+    <body>
+        <div class="heading-booking">
+            <h2>Make A Booking</h2>
+        </div>
+        
+        <section class="container">
+            <div class="booking-form">
+                <form id="bookingform" action="bookingform.php"> <!--the php file does not exist-->
+                    <div class="booking-section">
+                        <label for="ownername" class="labelbooking">Owner Name</label><br>
+                        <input type="text" id="ownername" name="ownername" class="inputbooking" required><br>
+                        <label for="ownerphone" class="labelbooking">Phone Number</label><br>
+                        <input type="text" id="ownerphone" name="ownerphone" class="inputbooking" required><br>
+                        <label for="owneremail" class="labelbooking">Email Address</label><br>
+                        <input type="email" id="owneremail" name="owneremail" class="inputbooking" required><br>
+                        <br>
+                        <label for="dogname" class="labelbooking">Dog Name</label><br>
+                        <input type="text" id="dogname" name="dogname" class="inputbooking" required><br>
+                        <label for="dogbreed" class="labelbooking">Breed</label><br>
+                        <input type="text" id="dogbreed" name="dogbreed" class="inputbooking"><br>
+                        <label for="dogage" class="labelbooking">Age</label><br>
+                        <input type="text" id="dogage" name="dogage" class="inputbooking"><br>
+                        <br>
+                    </div>
+                    <div class="booking-section">
+                        <!--select services-->
+                        <label for="servicesselect" class="labelbooking">Services</label><br>
+                        <select id="servicesselect" name="servicesselect">
+                            <option value="wash1">Wash</option>
+                            <option value="wash2">Wash</option>
+                            <option value="wash3">Wash</option>
+                            <option value="wash4">Wash</option>
+                        </select><br>
+                        <br>
+                        <label class="labelbooking">Addons</label><br>
+                        <input type="checkbox" id="addon1" name="addon1" value="addon1" class="inputbooking">
+                        <label for="addon1" class="labelbooking">Addon One</label><br>
+                        <input type="checkbox" id="addon2" name="addon2" value="addon2" class="inputbooking">
+                        <label for="addon2" class="labelbooking">Addon Two</label><br>
+                        <input type="checkbox" id="addon3" name="addon3" value="addon3" class="inputbooking">
+                        <label for="addon3" class="labelbooking">Addon Three</label><br>
+                        <br>
+                    </div>
+                    <div class="booking-section">
+                        <!--date and time-->
+                        <label for="bookingdate" class="labelbooking">Date</label><br>
+                        <input type="date" id="bookingdate" name="bookingdate" class="inputbooking" required><br>
+                        <br>
+                        <label for="bookingtime" class="labelbooking">Time</label><br>
+                        <input type="time" id="bookingtime" name="bookingtime" class="inputbooking" required><br>
+                    </div>
+                    <br><br>
+                    <input type="submit" value="Book Appointment">
+                </form>
+            </div>
+        </section>
+    </body>
+
+    <footer>
+        <div class="foot-container">
+            <div class="foot-content">
+                <p><span class="footer-title">Snazzy Paws Grooming</span> <br><br> Opening Hours: <br> Monday to Saturday, 9am to 5pm.</p>
+            </div>
+            <div class="social-links">
+                <p>Social media icons and links</p>
+            </div>
+        </div>
+    </footer>
+</html>
