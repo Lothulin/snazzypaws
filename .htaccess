@@ -1,0 +1,6 @@
+<Files staff.html>
+AuthType Basic
+AuthName "Restricted access - Username:User, Password: password"
+AuthUserFile ".htpasswd"
+Require valid-user
+</Files

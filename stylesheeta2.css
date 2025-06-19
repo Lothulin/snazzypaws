@@ -1,0 +1,320 @@
+:root {
+    /* CSS HEX - Used Coolors.co for the palette CSS generation*/
+    --snow: #FAF4F2ff;
+    --light-coral: #F58D8Dff;
+    --picton-blue: #59a5d8ff;
+    --yinmn-blue: #2e5077ff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--light-coral);
+    
+}
+
+#foot-container {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+}
+
+.footer-title {
+    color: var(--snow);
+    font-family: "Coustard", serif;
+    font-size: 20px;
+}
+
+
+/*content in header - logo and navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--snow);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    
+}
+
+.header-container {
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    display: flex;
+    align-items: center;
+    height: 6%;
+}
+
+.navbar-brand {
+    max-width: 30%;  
+}
+
+
+
+.nav-item {
+    font-family: "Nunito", sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+a.nav-link:link
+{
+    color: var(--yinmn-blue);
+    text-decoration: none;
+}
+
+a.nav-link:visited
+{
+    color: var(--light-coral);
+    text-decoration: none;
+}
+
+a.nav-link:hover
+{
+    color: var(--picton-blue);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .header-container {
+        display: inline;
+    }
+    .logo {
+        max-width: 100%;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+/* heading on home page */
+#heading-home {
+    display: flex;
+    background-image: url(../Resources/erda-estremera-sxNt9g77PE0-unsplash.jpg);
+    background-color: var(--snow);
+    max-height: 20%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#heading-home-text {
+    margin-top: 6%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+/* page content */
+body {
+    background-color: var(--snow);
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin-top: 6%;
+    margin-bottom: 15%;
+    align-content: center;
+}
+
+.container {
+    background-color: var(--snow);
+
+}
+
+h1 {
+    color: var(--light-coral);
+    font-family: "Caprasimo", serif;
+    font-size: 80px;
+    font-size: 3.5vw;
+}
+
+h2, th {
+    color: var(--yinmn-blue);
+    font-family: "Coustard", serif;
+}
+
+h3 {
+    color: var(--picton-blue);
+    font-family: "Coustard", serif;
+}
+
+p, td {
+    color: var(--yinmn-blue);
+    font-family: "Nunito", sans-serif;
+}
+
+ul {
+    color: var(--yinmn-blue);
+    font-family: "Nunito", sans-serif;
+    margin: 1%;
+}
+
+a:link {
+    color: var(--snow);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--picton-blue);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--snow);
+    text-decoration: none;
+}
+
+
+.container {
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    margin-bottom: 2%;
+}
+
+@media screen and (max-width: 1500px) {
+    body {
+        margin-top: 20%;
+    }
+}
+
+/*index*/
+
+#mission-image {
+    width: 25%;
+    display: block;
+    margin: auto;
+}
+
+
+.buttons-home {
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+
+
+/* services page */
+
+
+td {
+    padding: 0.5%;
+    width: 400px;
+}
+
+th {
+    text-align: center;
+    padding: 1%;
+}
+
+#linktobooking {
+    margin: auto;
+    width: 50%;
+}
+
+/*booking page*/
+#heading-booking {
+    margin-top: 6%;
+    margin-left: 15%;
+}
+
+#labelbooking {
+    margin-top: .5%;
+    margin-bottom: .5%;
+    font-family: "Nunito", sans-serif;
+    font-size: large;
+    color: var(--yinmn-blue);
+}
+
+#inputbooking {
+    margin-top: .5%;
+    margin-bottom: .5%;
+}
+
+/*gallery page*/
+
+
+.gallery-img {
+    width: 100%;
+}
+
+.image-caption {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .container-row {
+        display: block;
+    }
+    .gallery {
+        max-width: 100%;
+    }
+}
+
+/*contact page */
+#contact-container {
+    display: block;
+    justify-content: space-between;
+}
+
+
+#contact-form {
+    border: 10px solid var(--yinmn-blue);
+    border-radius: 5px;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    background-color: var(--light-coral);
+    display: block;
+}
+
+.labelcontact {
+    color: var(--snow);
+    font-family: "Nunito", sans-serif;
+    font-size: larger;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+#inputcontact {
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+textarea {
+    width: 400px; 
+    height: 200px;
+}
+
+#map {
+    align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+    
+    #contact-container {
+        display: inline;
+        justify-content: space-between;
+    }
+
+    #content {
+        margin: 4%;
+    }
+
+    #contact-form {
+        margin: 4%;
+    }
+
+    textarea {
+        width: 350px;
+    }
+}
